@@ -1,0 +1,148 @@
+/* ======= General Page Setup ======= */
+body {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======= Container ======= */
+.container {
+  max-width: 450px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+}
+
+/* ======= Headings ======= */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #444;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* ======= Labels & Inputs ======= */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #555;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+/* ======= Buttons ======= */
+button {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ======= Recipe List ======= */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background: #f8f9fa;
+  border-left: 5px solid #007bff;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+ul li:hover {
+  transform: scale(1.02);
+  background: #eef4ff;
+}
+
+/* ======= Recipe Title ======= */
+ul li strong {
+  display: block;
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+/* ======= Ingredients ======= */
+ul li p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* ======= Delete Button ======= */
+ul li button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+ul li button:hover {
+  background-color: #c0392b;
+}
+
+/* ======= Empty Message ======= */
+p {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* ======= Scroll Handling ======= */
+@media (max-height: 700px) {
+  body {
+    overflow-y: auto;
+  }
+}

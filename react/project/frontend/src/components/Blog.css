@@ -1,0 +1,15 @@
+.container{
+    gap: 16px;
+
+}
+.img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow:  0 4px 12px rgba(0,0,0,0.06);
+}
+.content{
+    flex: 1;
+}

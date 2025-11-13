@@ -1,0 +1,76 @@
+1. How to define objects in JavaScript?
+
+ An object is used to store many values together.
+ These values are written in key : value pairs.
+Example:
+let person = {
+  name: "Vinith",
+  age: 22,
+  city: "Bengaluru"
+};
+
+
+2. How to access properties and methods of objects?
+When we create an object, it has properties (data) and methods (functions).
+To use them, we must access them.
+We can access values in two ways:
+
+1. Dot notation:
+Most commonly used.
+You type the object name, then a dot (.), then the property name.
+The property name must be a valid identifier (no spaces, starts with a letter).
+
+Example:
+let person = {
+  name: "Vinith",
+  age: 22,
+  city: "Bengaluru"
+};
+
+// Accessing properties
+console.log(person.name);  // Vinith
+console.log(person.age);   // 22
+console.log(person.city);  // Bengaluru
+
+
+Here, person.name directly gives the value "Vinith".
+
+2. Bracket Notation (object["property"])
+
+Property name is written inside quotes " ".
+Useful when the property name has spaces, special characters, or is stored in a variable.
+
+Works just like accessing array elements with [].
+
+Example:
+let person = {
+  name: "Vinith",
+  age: 22,
+  "home town": "Udupi"   // Property with space
+};
+
+// Accessing properties
+console.log(person["name"]);       // Vinith
+console.log(person["age"]);        // 22
+console.log(person["home town"]);  // Udupi
+
+
+3. What is the use of this keyword in JavaScript?
+
+The keyword this refers to the object that is currently calling the method.
+It helps an object refer to its own properties/methods.
+
+Example:
+let student = {
+  name: "Vinith",
+  course: "Full Stack Development",
+  introduce: function() {
+    console.log("Hi, I am " + this.name + " and I study " + this.course);
+  }
+};
+
+student.introduce();
+
+Output:
+
+Hi, I am Vinith and I study Full Stack Development

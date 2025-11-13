@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #cde1f1;
+}
+
+.navbar {
+  background-color: #282c34;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #61dafb;
+}
+
+.content {
+  padding: 30px;
+  text-align: center;
+}

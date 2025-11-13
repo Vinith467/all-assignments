@@ -1,0 +1,86 @@
+1. Explain the difference between var, let and const keywords.
+answer:
+
+var
+
+Old way of declaring variables (before ES6).
+It is function-scoped, not block-scoped.
+Can be re-declared and updated.
+Hoisted (moved to the top during execution) but initialized with undefined.
+example:var name = "Vinith";
+var name = "Shetty"; // re-declaration allowed
+console.log(name);   // Output: Shetty
+
+let
+
+Introduced in ES6.
+Block-scoped (works only inside {}).
+Can be updated but cannot be re-declared in the same scope.
+Hoisted, but not initialized → gives ReferenceError if used before declaration.
+Example:
+let age = 22;
+age = 23; // updating is allowed
+// let age = 24; error (cannot re-declare in same scope)
+console.log(age); // Output: 23
+
+const
+
+Also ES6.
+Block-scoped.
+Cannot be updated or re-declared.
+Must be initialized at the time of declaration.
+Example:
+const country = "India";
+// country = "Germany";  error (cannot update)
+console.log(country); // Output: India
+
+2.Mention the different datatypes with an example for each.
+answer:
+JavaScript has two main categories:
+Primitive Data Types (basic, single value)
+Non-Primitive (Reference) Data Types (collections, objects)
+
+Primitive Data Types
+
+String – sequence of characters
+let name = "Vinith"; // string
+
+
+Number – integers, floats, etc.
+let age = 22; // number
+
+
+Boolean – true or false
+let isStudent = true;
+
+
+Undefined – declared but not assigned
+let city;
+console.log(city); // undefined
+
+
+Null – explicitly no value
+let data = null;
+
+
+Symbol – unique identifier
+let id = Symbol("123");
+
+
+BigInt – very large numbers
+let bigNum = 123456789012345678901234567890n;
+
+
+Non-Primitive Data Types
+
+Object – collection of key-value pairs
+let person = { name: "Vinith", age: 22 };
+
+Array – ordered list of values
+let fruits = ["apple", "banana", "mango"];
+
+
+Function – block of code
+function greet() {
+  return "Hello!";
+}
